@@ -9,8 +9,8 @@
 #import "FLAssertions.h"
 id _FLAssertIsClass(id object, Class aClass) {
     if(object) {
-        FLAssertNotNil_v(aClass, @"class for %@ is nil", NSStringFromClass(aClass));
-        FLAssert_v([object isKindOfClass:aClass], 
+        FLAssertNotNilWithComment(aClass, @"class for %@ is nil", NSStringFromClass(aClass));
+        FLAssertWithComment([object isKindOfClass:aClass], 
             @"expecting type of %@ but got %@", 
             NSStringFromClass(aClass), 
             NSStringFromClass([object class]));
@@ -20,7 +20,7 @@ id _FLAssertIsClass(id object, Class aClass) {
 
 id _FLAssertConformsToProtocol(id object, Protocol* proto) {
     if(object) {
-        FLAssert_v([object conformsToProtocol:proto], @"expecting object to implement protocol: %@", NSStringFromProtocol(proto));
+        FLAssertWithComment([object conformsToProtocol:proto], @"expecting object to implement protocol: %@", NSStringFromProtocol(proto));
     }
     return object;
 }

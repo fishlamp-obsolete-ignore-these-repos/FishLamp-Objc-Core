@@ -7,10 +7,13 @@
 //
 
 #import "FLAssertionFailureErrorDomain.h"
+NSString* const FLAssertionFailureErrorDomain = @"com.fishlamp.assertion-failure";
 
-@implementation FLAssertionFailureErrorDomain
+@implementation FLAssertionFailureErrorDomainInfo
 
-FLSynthesizeSingleton(FLAssertionFailureErrorDomain);
++ (id) assertionFailureErrorDomainInfo {
+    return FLAutorelease([[[self class] alloc] init]);
+}
 
 - (NSString*) stringFromErrorCode:(int) errorCode {
     switch(errorCode) {

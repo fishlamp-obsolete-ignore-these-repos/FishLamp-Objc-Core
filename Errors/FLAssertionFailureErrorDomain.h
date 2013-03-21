@@ -6,8 +6,10 @@
 //  Copyright (c) 2012 Mike Fullerton. All rights reserved.
 //
 
-#import "FLErrorDomain.h"
+#import "FLErrorDomainInfo.h"
 #import "FLFrameworkErrorDomain.h"
+
+extern NSString* const FLAssertionFailureErrorDomain;
 
 typedef enum {
     FLAssertionFailureNone,
@@ -30,6 +32,8 @@ typedef enum {
     FLAssertionFailureRequiredOverride
 } FLAssertionFailure;
 
-@interface FLAssertionFailureErrorDomain : NSObject<FLErrorDomain>
+@interface FLAssertionFailureErrorDomainInfo : NSObject<FLErrorDomainInfo>
+
++ (id) assertionFailureErrorDomainInfo;
 @end
 

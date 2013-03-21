@@ -22,11 +22,15 @@
     FLSetObjectWithRetain(_arguments[_count++], first);
     id obj = nil;
     while ((obj = va_arg(valist, id))) { 
-        FLAssert_v(_count < FLArgumentListMaxArgumentCount, @"too many arguments");
+        FLAssertWithComment(_count < FLArgumentListMaxArgumentCount, @"too many arguments");
         FLSetObjectWithRetain(_arguments[_count++], obj);
     }
 }
 */
+
+#if EXPERIMENTAL
+
+#define callVardicMethodSafely(values...) ({ values *v = { values }; _actualFunction(values, sizeof(v) / sizeof(*v)); })
 
 #define kMaxSize 20
 NSString* func(id condition, ...) {
@@ -43,7 +47,7 @@ NSString* func(id condition, ...) {
             first = bridge_(id, obj);
         }
         else {
-            FLAssert_(count < kMaxSize);
+            FLAssert(count < kMaxSize);
             fake_list[count] = obj;
         }
         count++;
@@ -71,18 +75,21 @@ void test() {
     YO(1 == 1, @"HI %@ %d %f", @"THERE", 4, 2.5);
 }
 
-void FLThrowConfirmationFailedException(FLAssertionFailure failure, NSString* description, NSString* comment, FLStackTrace* stackTrace) {
-    
-//    test();
+#endif
 
-    [[NSException exceptionWithError:[NSError errorWithDomain:[FLAssertionFailureErrorDomain instance] 
-            code:failure
-            userInfo:nil
-            reason:description
-            comment:comment 
-            stackTrace:stackTrace]] raise]; 
-}
-
-BOOL __FLConfirmationDidFail() {
-    return YES;
-}
+//void FLThrowConfirmationFailedException(FLAssertionFailure failure, NSString* description, NSString* comment, FLStackTrace* stackTrace) {
+//    
+////    test();
+//
+//    FLThrowException([NSException exceptionWithError:[NSError errorWithDomain:FLAssertionFailureErrorDomain 
+//            code:failure
+//            userInfo:nil
+//            reason:description
+//            comment:comment 
+//            stackTrace:stackTrace]]); 
+//}
+//
+//BOOL __FLConfirmationDidFail() {
+//    return YES;
+//}
+//

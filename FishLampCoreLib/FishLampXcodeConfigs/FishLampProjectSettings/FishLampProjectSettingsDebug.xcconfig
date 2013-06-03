@@ -1,5 +1,5 @@
 //
-//  FishLampProjectSettingsRelease.xcconfig
+//  FishLampProjectSettingsDebug.xcconfig
 //  FLCore
 //
 //  Created by Mike Fullerton on 11/13/12.
@@ -7,4 +7,5 @@
 //  The FishLamp Framework is released under the MIT License: http://fishlamp.com/license 
 //
 
-#include "FishLampBuildSupport/FishLampIncludedConfig-Settings.xcconfig"
+#include "FishLampXcodeConfigs/FishLampIncludedConfig-Settings.xcconfig"
+#include "FishLampXcodeConfigs/FishLampIncludedConfig-Settings-Debug.xcconfig"

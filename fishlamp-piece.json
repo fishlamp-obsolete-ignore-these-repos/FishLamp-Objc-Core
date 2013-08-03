@@ -5,8 +5,5 @@
 	"createdBy": "Mike Fullerton",
 	"createdOn": "08/03/2013",
 	"contact": "hello@fishlamp.comp",
-	"importPaths": [
-		{ "path": "Classes" }
-	]
-	
+	"importPaths": "Classes, Extras"
 }

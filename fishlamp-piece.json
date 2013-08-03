@@ -1,0 +1,12 @@
+{	
+	"pieceName": "fishlamp-core",
+	"shortDescription" : "Core files required by all FishLamp projects",
+	"url": "",
+	"createdBy": "Mike Fullerton",
+	"createdOn": "08/03/2013",
+	"contact": "hello@fishlamp.comp",
+	"importPaths": [
+		{ "path": "Classes" }
+	]
+	
+}

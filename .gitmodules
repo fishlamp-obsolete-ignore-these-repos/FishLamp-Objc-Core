@@ -1,0 +1,3 @@
+[submodule "lib/fishlamp-xcodeconfigs"]
+	path = lib/fishlamp-xcodeconfigs
+	url = git@github.com:fishlamp/fishlamp-xcodeconfigs

@@ -8,7 +8,6 @@
 
 #import "FLMainThreadObject.h"
 #import "FLAssertions.h"
-#import "FLLog.h"
 
 @implementation FLMainThreadObject
 
@@ -30,7 +29,7 @@
                 [anInvocation invokeWithTarget:object];
             }
             @catch(NSException* ex) {
-                FLLog([ex description]);
+//                FLLog([ex description]);
             }
         });
     }

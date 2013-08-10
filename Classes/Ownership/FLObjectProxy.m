@@ -7,8 +7,8 @@
 //
 
 #import "FLObjectProxy.h"
-#import "FLLog.h"
-#import "FLTrace.h"
+//#import "FLLog.h"
+//#import "FLTrace.h"
 #import "FLAssertions.h"
 
 @implementation NSObject (FLObjectProxy)
@@ -75,7 +75,7 @@
         [anInvocation invokeWithTarget:object];
     }
     else {
-        FLTrace(@"not responding to %@", NSStringFromSelector([anInvocation selector]));
+//        FLTrace(@"not responding to %@", NSStringFromSelector([anInvocation selector]));
     }
 }
 
@@ -84,7 +84,7 @@
     NSMethodSignature* sig = [[self representedObject] methodSignatureForSelector:selector];
     if(!sig) {
         sig = [NSMethodSignature signatureWithObjCTypes:"@^v^c"];
-        FLTrace(@"returning fake method signature for selector %@", NSStringFromSelector(selector));
+//        FLTrace(@"returning fake method signature for selector %@", NSStringFromSelector(selector));
     }
     return sig;
 }

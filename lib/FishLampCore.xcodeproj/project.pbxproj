@@ -11,7 +11,9 @@
 			isa = PBXAggregateTarget;
 			buildConfigurationList = 27E9CF97175E4A3600BD6205 /* Build configuration list for PBXAggregateTarget "FishLampCore" */;
 			buildPhases = (
-				277CC9E517B155CF002DF16C /* CopyFiles */,
+				277CC9E517B155CF002DF16C /* Copy Files */,
+				27C7A84517B6C23600A83CE2 /* CopyFiles */,
+				27C7A84C17B6C29000A83CE2 /* CopyFiles */,
 			);
 			dependencies = (
 				27E9CF99175E4A4200BD6205 /* PBXTargetDependency */,
@@ -355,55 +357,55 @@
 		27680904175D370700B1D643 /* NSObject+FLPerformSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = 27680741175D370700B1D643 /* NSObject+FLPerformSelector.m */; };
 		27680905175D370700B1D643 /* NSObject+FLPerformSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = 27680741175D370700B1D643 /* NSObject+FLPerformSelector.m */; };
 		27680906175D370700B1D643 /* NSObject+FLPerformSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = 27680741175D370700B1D643 /* NSObject+FLPerformSelector.m */; };
-		277CC9E617B155FA002DF16C /* FishLampVersion.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27F1AF06175FBEEB0086E14A /* FishLampVersion.h */; };
-		277CC9E717B155FA002DF16C /* FLAssertionFailedError.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2781F2A9179C4CBC008DCAFB /* FLAssertionFailedError.h */; };
-		277CC9E817B155FA002DF16C /* FLAssertionFailureErrorDomain.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2781F2AB179C4CBC008DCAFB /* FLAssertionFailureErrorDomain.h */; };
-		277CC9E917B155FA002DF16C /* FLAssertions.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2781F2AD179C4CBC008DCAFB /* FLAssertions.h */; };
-		277CC9EA17B155FA002DF16C /* FLConfirmations.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2781F2AF179C4CBC008DCAFB /* FLConfirmations.h */; };
-		277CC9EB17B155FA002DF16C /* FLDebug.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 276806D6175D370700B1D643 /* FLDebug.h */; };
-		277CC9EC17B155FA002DF16C /* FLCancelError.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 276806DF175D370700B1D643 /* FLCancelError.h */; };
-		277CC9ED17B155FA002DF16C /* FLErrorCodes.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 276806E3175D370700B1D643 /* FLErrorCodes.h */; };
-		277CC9EE17B155FA002DF16C /* FLErrorDomainInfo.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 276806E5175D370700B1D643 /* FLErrorDomainInfo.h */; };
-		277CC9EF17B155FA002DF16C /* FLErrorException.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 276806E7175D370700B1D643 /* FLErrorException.h */; };
-		277CC9F017B155FA002DF16C /* FLExceptions.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 276806EB175D370700B1D643 /* FLExceptions.h */; };
-		277CC9F117B155FA002DF16C /* FLMutableError.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 276806EE175D370700B1D643 /* FLMutableError.h */; };
-		277CC9F217B155FA002DF16C /* FLStackTrace.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 276806F0175D370700B1D643 /* FLStackTrace.h */; };
-		277CC9F317B155FA002DF16C /* NSError+FLExtras.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 276806F2175D370700B1D643 /* NSError+FLExtras.h */; };
-		277CC9F417B155FA002DF16C /* FishLampCore.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 276806F4175D370700B1D643 /* FishLampCore.h */; };
-		277CC9F517B155FA002DF16C /* FLAssociatedProperty.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27680706175D370700B1D643 /* FLAssociatedProperty.h */; };
-		277CC9F617B155FA002DF16C /* FLAtomicProperties.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27680708175D370700B1D643 /* FLAtomicProperties.h */; };
-		277CC9F717B155FA002DF16C /* FLBitFlagsProperty.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2768070A175D370700B1D643 /* FLBitFlagsProperty.h */; };
-		277CC9F817B155FA002DF16C /* FLDefaultProperty.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2768070B175D370700B1D643 /* FLDefaultProperty.h */; };
-		277CC9F917B155FA002DF16C /* FLProperties.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2768070C175D370700B1D643 /* FLProperties.h */; };
-		277CC9FA17B155FA002DF16C /* FLSingletonProperty.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2768070D175D370700B1D643 /* FLSingletonProperty.h */; };
-		277CC9FB17B155FA002DF16C /* FLStaticMemberProperty.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2768070E175D370700B1D643 /* FLStaticMemberProperty.h */; };
-		277CC9FC17B155FA002DF16C /* FLStructFlagsProperty.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2768070F175D370700B1D643 /* FLStructFlagsProperty.h */; };
-		277CC9FD17B155FA002DF16C /* FLCompilerWarnings.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27680711175D370700B1D643 /* FLCompilerWarnings.h */; };
-		277CC9FE17B155FA002DF16C /* FLCoreFlags.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27680712175D370700B1D643 /* FLCoreFlags.h */; };
-		277CC9FF17B155FA002DF16C /* FLMath.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27680713175D370700B1D643 /* FLMath.h */; };
-		277CCA0017B155FA002DF16C /* FLObjc.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27680714175D370700B1D643 /* FLObjc.h */; };
-		277CCA0117B155FA002DF16C /* FLObjcARC.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27680715175D370700B1D643 /* FLObjcARC.h */; };
-		277CCA0217B155FA002DF16C /* FLObjcMRC.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27680716175D370700B1D643 /* FLObjcMRC.h */; };
-		277CCA0317B155FA002DF16C /* FLCoreRequired.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27680717175D370700B1D643 /* FLCoreRequired.h */; };
-		277CCA0417B155FA002DF16C /* FLObjcRuntime.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27680719175D370700B1D643 /* FLObjcRuntime.h */; };
-		277CCA0517B155FA002DF16C /* FLPropertyAttributes.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2768071B175D370700B1D643 /* FLPropertyAttributes.h */; };
-		277CCA0617B155FA002DF16C /* FLRuntimeInfo.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2768071D175D370700B1D643 /* FLRuntimeInfo.h */; };
-		277CCA0717B155FA002DF16C /* FLSelector.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2768071F175D370700B1D643 /* FLSelector.h */; };
-		277CCA0817B155FA002DF16C /* FLCharString.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27680722175D370700B1D643 /* FLCharString.h */; };
-		277CCA0917B155FA002DF16C /* FLStringUtils_Inlines.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2733799C1781FF7D00F56276 /* FLStringUtils_Inlines.h */; };
-		277CCA0A17B155FA002DF16C /* FLPrettyString.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27680724175D370700B1D643 /* FLPrettyString.h */; };
-		277CCA0B17B155FA002DF16C /* FLStringFormatter.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27680726175D370700B1D643 /* FLStringFormatter.h */; };
-		277CCA0C17B155FA002DF16C /* FLStringUtils.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27680728175D370700B1D643 /* FLStringUtils.h */; };
-		277CCA0D17B155FA002DF16C /* FLWhitespace.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2768072A175D370700B1D643 /* FLWhitespace.h */; };
-		277CCA0F17B155FA002DF16C /* FLAtomic.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2768072E175D370700B1D643 /* FLAtomic.h */; };
-		277CCA1017B155FA002DF16C /* FLBitFlags.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2768072F175D370700B1D643 /* FLBitFlags.h */; };
-		277CCA1117B155FA002DF16C /* FLOSVersion.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27680733175D370700B1D643 /* FLOSVersion.h */; };
-		277CCA1217B155FA002DF16C /* FLSelectorPerforming.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27680735175D370700B1D643 /* FLSelectorPerforming.h */; };
-		277CCA1317B155FA002DF16C /* FLVersion.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27680738175D370700B1D643 /* FLVersion.h */; };
-		277CCA1417B155FA002DF16C /* NSArray+FLExtras.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2768073A175D370700B1D643 /* NSArray+FLExtras.h */; };
-		277CCA1517B155FA002DF16C /* NSDictionary+FLAdditions.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2768073C175D370700B1D643 /* NSDictionary+FLAdditions.h */; };
-		277CCA1617B155FA002DF16C /* NSObject+Blocks.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2768073E175D370700B1D643 /* NSObject+Blocks.h */; };
-		277CCA1717B155FA002DF16C /* NSObject+FLPerformSelector.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27680740175D370700B1D643 /* NSObject+FLPerformSelector.h */; };
+		277CC9E617B155FA002DF16C /* FishLampVersion.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 27F1AF06175FBEEB0086E14A /* FishLampVersion.h */; };
+		277CC9E717B155FA002DF16C /* FLAssertionFailedError.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 2781F2A9179C4CBC008DCAFB /* FLAssertionFailedError.h */; };
+		277CC9E817B155FA002DF16C /* FLAssertionFailureErrorDomain.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 2781F2AB179C4CBC008DCAFB /* FLAssertionFailureErrorDomain.h */; };
+		277CC9E917B155FA002DF16C /* FLAssertions.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 2781F2AD179C4CBC008DCAFB /* FLAssertions.h */; };
+		277CC9EA17B155FA002DF16C /* FLConfirmations.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 2781F2AF179C4CBC008DCAFB /* FLConfirmations.h */; };
+		277CC9EB17B155FA002DF16C /* FLDebug.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 276806D6175D370700B1D643 /* FLDebug.h */; };
+		277CC9EC17B155FA002DF16C /* FLCancelError.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 276806DF175D370700B1D643 /* FLCancelError.h */; };
+		277CC9ED17B155FA002DF16C /* FLErrorCodes.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 276806E3175D370700B1D643 /* FLErrorCodes.h */; };
+		277CC9EE17B155FA002DF16C /* FLErrorDomainInfo.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 276806E5175D370700B1D643 /* FLErrorDomainInfo.h */; };
+		277CC9EF17B155FA002DF16C /* FLErrorException.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 276806E7175D370700B1D643 /* FLErrorException.h */; };
+		277CC9F017B155FA002DF16C /* FLExceptions.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 276806EB175D370700B1D643 /* FLExceptions.h */; };
+		277CC9F117B155FA002DF16C /* FLMutableError.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 276806EE175D370700B1D643 /* FLMutableError.h */; };
+		277CC9F217B155FA002DF16C /* FLStackTrace.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 276806F0175D370700B1D643 /* FLStackTrace.h */; };
+		277CC9F317B155FA002DF16C /* NSError+FLExtras.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 276806F2175D370700B1D643 /* NSError+FLExtras.h */; };
+		277CC9F417B155FA002DF16C /* FishLampCore.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 276806F4175D370700B1D643 /* FishLampCore.h */; };
+		277CC9F517B155FA002DF16C /* FLAssociatedProperty.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 27680706175D370700B1D643 /* FLAssociatedProperty.h */; };
+		277CC9F617B155FA002DF16C /* FLAtomicProperties.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 27680708175D370700B1D643 /* FLAtomicProperties.h */; };
+		277CC9F717B155FA002DF16C /* FLBitFlagsProperty.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 2768070A175D370700B1D643 /* FLBitFlagsProperty.h */; };
+		277CC9F817B155FA002DF16C /* FLDefaultProperty.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 2768070B175D370700B1D643 /* FLDefaultProperty.h */; };
+		277CC9F917B155FA002DF16C /* FLProperties.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 2768070C175D370700B1D643 /* FLProperties.h */; };
+		277CC9FA17B155FA002DF16C /* FLSingletonProperty.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 2768070D175D370700B1D643 /* FLSingletonProperty.h */; };
+		277CC9FB17B155FA002DF16C /* FLStaticMemberProperty.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 2768070E175D370700B1D643 /* FLStaticMemberProperty.h */; };
+		277CC9FC17B155FA002DF16C /* FLStructFlagsProperty.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 2768070F175D370700B1D643 /* FLStructFlagsProperty.h */; };
+		277CC9FD17B155FA002DF16C /* FLCompilerWarnings.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 27680711175D370700B1D643 /* FLCompilerWarnings.h */; };
+		277CC9FE17B155FA002DF16C /* FLCoreFlags.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 27680712175D370700B1D643 /* FLCoreFlags.h */; };
+		277CC9FF17B155FA002DF16C /* FLMath.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 27680713175D370700B1D643 /* FLMath.h */; };
+		277CCA0017B155FA002DF16C /* FLObjc.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 27680714175D370700B1D643 /* FLObjc.h */; };
+		277CCA0117B155FA002DF16C /* FLObjcARC.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 27680715175D370700B1D643 /* FLObjcARC.h */; };
+		277CCA0217B155FA002DF16C /* FLObjcMRC.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 27680716175D370700B1D643 /* FLObjcMRC.h */; };
+		277CCA0317B155FA002DF16C /* FLCoreRequired.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 27680717175D370700B1D643 /* FLCoreRequired.h */; };
+		277CCA0417B155FA002DF16C /* FLObjcRuntime.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 27680719175D370700B1D643 /* FLObjcRuntime.h */; };
+		277CCA0517B155FA002DF16C /* FLPropertyAttributes.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 2768071B175D370700B1D643 /* FLPropertyAttributes.h */; };
+		277CCA0617B155FA002DF16C /* FLRuntimeInfo.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 2768071D175D370700B1D643 /* FLRuntimeInfo.h */; };
+		277CCA0717B155FA002DF16C /* FLSelector.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 2768071F175D370700B1D643 /* FLSelector.h */; };
+		277CCA0817B155FA002DF16C /* FLCharString.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 27680722175D370700B1D643 /* FLCharString.h */; };
+		277CCA0917B155FA002DF16C /* FLStringUtils_Inlines.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 2733799C1781FF7D00F56276 /* FLStringUtils_Inlines.h */; };
+		277CCA0A17B155FA002DF16C /* FLPrettyString.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 27680724175D370700B1D643 /* FLPrettyString.h */; };
+		277CCA0B17B155FA002DF16C /* FLStringFormatter.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 27680726175D370700B1D643 /* FLStringFormatter.h */; };
+		277CCA0C17B155FA002DF16C /* FLStringUtils.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 27680728175D370700B1D643 /* FLStringUtils.h */; };
+		277CCA0D17B155FA002DF16C /* FLWhitespace.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 2768072A175D370700B1D643 /* FLWhitespace.h */; };
+		277CCA0F17B155FA002DF16C /* FLAtomic.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 2768072E175D370700B1D643 /* FLAtomic.h */; };
+		277CCA1017B155FA002DF16C /* FLBitFlags.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 2768072F175D370700B1D643 /* FLBitFlags.h */; };
+		277CCA1117B155FA002DF16C /* FLOSVersion.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 27680733175D370700B1D643 /* FLOSVersion.h */; };
+		277CCA1217B155FA002DF16C /* FLSelectorPerforming.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 27680735175D370700B1D643 /* FLSelectorPerforming.h */; };
+		277CCA1317B155FA002DF16C /* FLVersion.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 27680738175D370700B1D643 /* FLVersion.h */; };
+		277CCA1417B155FA002DF16C /* NSArray+FLExtras.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 2768073A175D370700B1D643 /* NSArray+FLExtras.h */; };
+		277CCA1517B155FA002DF16C /* NSDictionary+FLAdditions.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 2768073C175D370700B1D643 /* NSDictionary+FLAdditions.h */; };
+		277CCA1617B155FA002DF16C /* NSObject+Blocks.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 2768073E175D370700B1D643 /* NSObject+Blocks.h */; };
+		277CCA1717B155FA002DF16C /* NSObject+FLPerformSelector.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 27680740175D370700B1D643 /* NSObject+FLPerformSelector.h */; };
 		2781F2B1179C4CBC008DCAFB /* FLAssertionFailedError.h in Headers */ = {isa = PBXBuildFile; fileRef = 2781F2A9179C4CBC008DCAFB /* FLAssertionFailedError.h */; };
 		2781F2B2179C4CBC008DCAFB /* FLAssertionFailedError.h in Headers */ = {isa = PBXBuildFile; fileRef = 2781F2A9179C4CBC008DCAFB /* FLAssertionFailedError.h */; };
 		2781F2B3179C4CBC008DCAFB /* FLAssertionFailedError.h in Headers */ = {isa = PBXBuildFile; fileRef = 2781F2A9179C4CBC008DCAFB /* FLAssertionFailedError.h */; };
@@ -503,13 +505,13 @@
 		27C7A6BF17B6A2A400A83CE2 /* FLArrayProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 27C7A6B717B6A2A400A83CE2 /* FLArrayProxy.m */; };
 		27C7A6C017B6A2A400A83CE2 /* FLArrayProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 27C7A6B717B6A2A400A83CE2 /* FLArrayProxy.m */; };
 		27C7A6C117B6A2A400A83CE2 /* FLArrayProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 27C7A6B717B6A2A400A83CE2 /* FLArrayProxy.m */; };
-		27C7A6EF17B6BBAB00A83CE2 /* FLBroadcaster.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27C7A66D17B6A16F00A83CE2 /* FLBroadcaster.h */; };
-		27C7A6F017B6BBAB00A83CE2 /* FLObservable.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27C7A66F17B6A16F00A83CE2 /* FLObservable.h */; };
-		27C7A6F117B6BBAB00A83CE2 /* FLArrayProxy.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27C7A6B617B6A2A400A83CE2 /* FLArrayProxy.h */; };
-		27C7A6F217B6BBAB00A83CE2 /* FLMainThreadObject.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27C7A67217B6A16F00A83CE2 /* FLMainThreadObject.h */; };
-		27C7A6F317B6BBAB00A83CE2 /* FLNonretained.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27C7A67417B6A16F00A83CE2 /* FLNonretained.h */; };
-		27C7A6F417B6BBAB00A83CE2 /* FLObjectProxy.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27C7A67617B6A16F00A83CE2 /* FLObjectProxy.h */; };
-		27C7A6F517B6BBAB00A83CE2 /* FLRetainedObject.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27C7A67817B6A16F00A83CE2 /* FLRetainedObject.h */; };
+		27C7A6EF17B6BBAB00A83CE2 /* FLBroadcaster.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 27C7A66D17B6A16F00A83CE2 /* FLBroadcaster.h */; };
+		27C7A6F017B6BBAB00A83CE2 /* FLObservable.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 27C7A66F17B6A16F00A83CE2 /* FLObservable.h */; };
+		27C7A6F117B6BBAB00A83CE2 /* FLArrayProxy.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 27C7A6B617B6A2A400A83CE2 /* FLArrayProxy.h */; };
+		27C7A6F217B6BBAB00A83CE2 /* FLMainThreadObject.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 27C7A67217B6A16F00A83CE2 /* FLMainThreadObject.h */; };
+		27C7A6F317B6BBAB00A83CE2 /* FLNonretained.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 27C7A67417B6A16F00A83CE2 /* FLNonretained.h */; };
+		27C7A6F417B6BBAB00A83CE2 /* FLObjectProxy.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 27C7A67617B6A16F00A83CE2 /* FLObjectProxy.h */; };
+		27C7A6F517B6BBAB00A83CE2 /* FLRetainedObject.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 27C7A67817B6A16F00A83CE2 /* FLRetainedObject.h */; };
 		27C7A78817B6C07200A83CE2 /* FLBatchDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = 27C7A77217B6C07200A83CE2 /* FLBatchDictionary.h */; };
 		27C7A78917B6C07200A83CE2 /* FLBatchDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = 27C7A77217B6C07200A83CE2 /* FLBatchDictionary.h */; };
 		27C7A78A17B6C07200A83CE2 /* FLBatchDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = 27C7A77217B6C07200A83CE2 /* FLBatchDictionary.h */; };
@@ -663,24 +665,20 @@
 		27C7A83117B6C12A00A83CE2 /* FLTrace.m in Sources */ = {isa = PBXBuildFile; fileRef = 27C7A7F217B6C12A00A83CE2 /* FLTrace.m */; };
 		27C7A83217B6C12A00A83CE2 /* FLTrace.m in Sources */ = {isa = PBXBuildFile; fileRef = 27C7A7F217B6C12A00A83CE2 /* FLTrace.m */; };
 		27C7A83317B6C12A00A83CE2 /* FLTrace.m in Sources */ = {isa = PBXBuildFile; fileRef = 27C7A7F217B6C12A00A83CE2 /* FLTrace.m */; };
-		27C7A83417B6C16F00A83CE2 /* FLConsoleLogSink.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27C7A7E517B6C12A00A83CE2 /* FLConsoleLogSink.h */; };
-		27C7A83517B6C16F00A83CE2 /* FLLog.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27C7A7E717B6C12A00A83CE2 /* FLLog.h */; };
-		27C7A83617B6C16F00A83CE2 /* FLLogEntry.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27C7A7E917B6C12A00A83CE2 /* FLLogEntry.h */; };
-		27C7A83717B6C16F00A83CE2 /* FLLogger.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27C7A7EB17B6C12A00A83CE2 /* FLLogger.h */; };
-		27C7A83817B6C16F00A83CE2 /* FLLogSink.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27C7A7ED17B6C12A00A83CE2 /* FLLogSink.h */; };
-		27C7A83917B6C16F00A83CE2 /* FLPrintf.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27C7A7EF17B6C12A00A83CE2 /* FLPrintf.h */; };
-		27C7A83A17B6C16F00A83CE2 /* FLTrace.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27C7A7F117B6C12A00A83CE2 /* FLTrace.h */; };
-		27C7A83B17B6C16F00A83CE2 /* FLBatchDictionary.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27C7A77217B6C07200A83CE2 /* FLBatchDictionary.h */; };
-		27C7A83C17B6C16F00A83CE2 /* FLCarefulDictionary.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27C7A77417B6C07200A83CE2 /* FLCarefulDictionary.h */; };
-		27C7A83D17B6C16F00A83CE2 /* FLCollectionIterator.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27C7A77617B6C07200A83CE2 /* FLCollectionIterator.h */; };
-		27C7A83E17B6C16F00A83CE2 /* FLInMemoryDataCache.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27C7A77817B6C07200A83CE2 /* FLInMemoryDataCache.h */; };
-		27C7A83F17B6C16F00A83CE2 /* FLObjectCache.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27C7A77A17B6C07200A83CE2 /* FLObjectCache.h */; };
-		27C7A84017B6C16F00A83CE2 /* FLOrderedCollection.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27C7A77C17B6C07200A83CE2 /* FLOrderedCollection.h */; };
-		27C7A84117B6C16F00A83CE2 /* FLBlockLinkedListElement.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27C7A77F17B6C07200A83CE2 /* FLBlockLinkedListElement.h */; };
-		27C7A84217B6C16F00A83CE2 /* FLLinkedList.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27C7A78117B6C07200A83CE2 /* FLLinkedList.h */; };
-		27C7A84317B6C16F00A83CE2 /* FLLinkedListElement.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27C7A78317B6C07200A83CE2 /* FLLinkedListElement.h */; };
-		27C7A84417B6C16F00A83CE2 /* FLLinkedListObjectContainer.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27C7A78517B6C07200A83CE2 /* FLLinkedListObjectContainer.h */; };
-		27ECBBAC17B15D3B0017F707 /* _FLAtomic.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2768072D175D370700B1D643 /* _FLAtomic.h */; };
+		27C7A84617B6C25E00A83CE2 /* FLBatchDictionary.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27C7A77217B6C07200A83CE2 /* FLBatchDictionary.h */; };
+		27C7A84717B6C25E00A83CE2 /* FLCarefulDictionary.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27C7A77417B6C07200A83CE2 /* FLCarefulDictionary.h */; };
+		27C7A84817B6C25E00A83CE2 /* FLCollectionIterator.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27C7A77617B6C07200A83CE2 /* FLCollectionIterator.h */; };
+		27C7A84917B6C25E00A83CE2 /* FLInMemoryDataCache.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27C7A77817B6C07200A83CE2 /* FLInMemoryDataCache.h */; };
+		27C7A84A17B6C25E00A83CE2 /* FLObjectCache.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27C7A77A17B6C07200A83CE2 /* FLObjectCache.h */; };
+		27C7A84B17B6C25E00A83CE2 /* FLOrderedCollection.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27C7A77C17B6C07200A83CE2 /* FLOrderedCollection.h */; };
+		27C7A84D17B6C2A800A83CE2 /* FLConsoleLogSink.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27C7A7E517B6C12A00A83CE2 /* FLConsoleLogSink.h */; };
+		27C7A84E17B6C2A800A83CE2 /* FLLog.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27C7A7E717B6C12A00A83CE2 /* FLLog.h */; };
+		27C7A84F17B6C2A800A83CE2 /* FLLogEntry.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27C7A7E917B6C12A00A83CE2 /* FLLogEntry.h */; };
+		27C7A85017B6C2A800A83CE2 /* FLLogger.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27C7A7EB17B6C12A00A83CE2 /* FLLogger.h */; };
+		27C7A85117B6C2A800A83CE2 /* FLLogSink.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27C7A7ED17B6C12A00A83CE2 /* FLLogSink.h */; };
+		27C7A85217B6C2A800A83CE2 /* FLPrintf.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27C7A7EF17B6C12A00A83CE2 /* FLPrintf.h */; };
+		27C7A85317B6C2A800A83CE2 /* FLTrace.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27C7A7F117B6C12A00A83CE2 /* FLTrace.h */; };
+		27ECBBAC17B15D3B0017F707 /* _FLAtomic.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 2768072D175D370700B1D643 /* _FLAtomic.h */; };
 		27F1AF07175FBEEB0086E14A /* FishLampVersion.h in Headers */ = {isa = PBXBuildFile; fileRef = 27F1AF06175FBEEB0086E14A /* FishLampVersion.h */; };
 		27F1AF08175FBEEB0086E14A /* FishLampVersion.h in Headers */ = {isa = PBXBuildFile; fileRef = 27F1AF06175FBEEB0086E14A /* FishLampVersion.h */; };
 		27F1AF09175FBEEB0086E14A /* FishLampVersion.h in Headers */ = {isa = PBXBuildFile; fileRef = 27F1AF06175FBEEB0086E14A /* FishLampVersion.h */; };
@@ -726,86 +724,101 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		277CC9E517B155CF002DF16C /* CopyFiles */ = {
+		277CC9E517B155CF002DF16C /* Copy Files */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = include/FishLampCore;
 			dstSubfolderSpec = 16;
 			files = (
-				27C7A83417B6C16F00A83CE2 /* FLConsoleLogSink.h in CopyFiles */,
-				27C7A83517B6C16F00A83CE2 /* FLLog.h in CopyFiles */,
-				27C7A83617B6C16F00A83CE2 /* FLLogEntry.h in CopyFiles */,
-				27C7A83717B6C16F00A83CE2 /* FLLogger.h in CopyFiles */,
-				27C7A83817B6C16F00A83CE2 /* FLLogSink.h in CopyFiles */,
-				27C7A83917B6C16F00A83CE2 /* FLPrintf.h in CopyFiles */,
-				27C7A83A17B6C16F00A83CE2 /* FLTrace.h in CopyFiles */,
-				27C7A83B17B6C16F00A83CE2 /* FLBatchDictionary.h in CopyFiles */,
-				27C7A83C17B6C16F00A83CE2 /* FLCarefulDictionary.h in CopyFiles */,
-				27C7A83D17B6C16F00A83CE2 /* FLCollectionIterator.h in CopyFiles */,
-				27C7A83E17B6C16F00A83CE2 /* FLInMemoryDataCache.h in CopyFiles */,
-				27C7A83F17B6C16F00A83CE2 /* FLObjectCache.h in CopyFiles */,
-				27C7A84017B6C16F00A83CE2 /* FLOrderedCollection.h in CopyFiles */,
-				27C7A84117B6C16F00A83CE2 /* FLBlockLinkedListElement.h in CopyFiles */,
-				27C7A84217B6C16F00A83CE2 /* FLLinkedList.h in CopyFiles */,
-				27C7A84317B6C16F00A83CE2 /* FLLinkedListElement.h in CopyFiles */,
-				27C7A84417B6C16F00A83CE2 /* FLLinkedListObjectContainer.h in CopyFiles */,
-				27C7A6EF17B6BBAB00A83CE2 /* FLBroadcaster.h in CopyFiles */,
-				27C7A6F017B6BBAB00A83CE2 /* FLObservable.h in CopyFiles */,
-				27C7A6F117B6BBAB00A83CE2 /* FLArrayProxy.h in CopyFiles */,
-				27C7A6F217B6BBAB00A83CE2 /* FLMainThreadObject.h in CopyFiles */,
-				27C7A6F317B6BBAB00A83CE2 /* FLNonretained.h in CopyFiles */,
-				27C7A6F417B6BBAB00A83CE2 /* FLObjectProxy.h in CopyFiles */,
-				27C7A6F517B6BBAB00A83CE2 /* FLRetainedObject.h in CopyFiles */,
-				27ECBBAC17B15D3B0017F707 /* _FLAtomic.h in CopyFiles */,
-				277CC9E617B155FA002DF16C /* FishLampVersion.h in CopyFiles */,
-				277CC9E717B155FA002DF16C /* FLAssertionFailedError.h in CopyFiles */,
-				277CC9E817B155FA002DF16C /* FLAssertionFailureErrorDomain.h in CopyFiles */,
-				277CC9E917B155FA002DF16C /* FLAssertions.h in CopyFiles */,
-				277CC9EA17B155FA002DF16C /* FLConfirmations.h in CopyFiles */,
-				277CC9EB17B155FA002DF16C /* FLDebug.h in CopyFiles */,
-				277CC9EC17B155FA002DF16C /* FLCancelError.h in CopyFiles */,
-				277CC9ED17B155FA002DF16C /* FLErrorCodes.h in CopyFiles */,
-				277CC9EE17B155FA002DF16C /* FLErrorDomainInfo.h in CopyFiles */,
-				277CC9EF17B155FA002DF16C /* FLErrorException.h in CopyFiles */,
-				277CC9F017B155FA002DF16C /* FLExceptions.h in CopyFiles */,
-				277CC9F117B155FA002DF16C /* FLMutableError.h in CopyFiles */,
-				277CC9F217B155FA002DF16C /* FLStackTrace.h in CopyFiles */,
-				277CC9F317B155FA002DF16C /* NSError+FLExtras.h in CopyFiles */,
-				277CC9F417B155FA002DF16C /* FishLampCore.h in CopyFiles */,
-				277CC9F517B155FA002DF16C /* FLAssociatedProperty.h in CopyFiles */,
-				277CC9F617B155FA002DF16C /* FLAtomicProperties.h in CopyFiles */,
-				277CC9F717B155FA002DF16C /* FLBitFlagsProperty.h in CopyFiles */,
-				277CC9F817B155FA002DF16C /* FLDefaultProperty.h in CopyFiles */,
-				277CC9F917B155FA002DF16C /* FLProperties.h in CopyFiles */,
-				277CC9FA17B155FA002DF16C /* FLSingletonProperty.h in CopyFiles */,
-				277CC9FB17B155FA002DF16C /* FLStaticMemberProperty.h in CopyFiles */,
-				277CC9FC17B155FA002DF16C /* FLStructFlagsProperty.h in CopyFiles */,
-				277CC9FD17B155FA002DF16C /* FLCompilerWarnings.h in CopyFiles */,
-				277CC9FE17B155FA002DF16C /* FLCoreFlags.h in CopyFiles */,
-				277CC9FF17B155FA002DF16C /* FLMath.h in CopyFiles */,
-				277CCA0017B155FA002DF16C /* FLObjc.h in CopyFiles */,
-				277CCA0117B155FA002DF16C /* FLObjcARC.h in CopyFiles */,
-				277CCA0217B155FA002DF16C /* FLObjcMRC.h in CopyFiles */,
-				277CCA0317B155FA002DF16C /* FLCoreRequired.h in CopyFiles */,
-				277CCA0417B155FA002DF16C /* FLObjcRuntime.h in CopyFiles */,
-				277CCA0517B155FA002DF16C /* FLPropertyAttributes.h in CopyFiles */,
-				277CCA0617B155FA002DF16C /* FLRuntimeInfo.h in CopyFiles */,
-				277CCA0717B155FA002DF16C /* FLSelector.h in CopyFiles */,
-				277CCA0817B155FA002DF16C /* FLCharString.h in CopyFiles */,
-				277CCA0917B155FA002DF16C /* FLStringUtils_Inlines.h in CopyFiles */,
-				277CCA0A17B155FA002DF16C /* FLPrettyString.h in CopyFiles */,
-				277CCA0B17B155FA002DF16C /* FLStringFormatter.h in CopyFiles */,
-				277CCA0C17B155FA002DF16C /* FLStringUtils.h in CopyFiles */,
-				277CCA0D17B155FA002DF16C /* FLWhitespace.h in CopyFiles */,
-				277CCA0F17B155FA002DF16C /* FLAtomic.h in CopyFiles */,
-				277CCA1017B155FA002DF16C /* FLBitFlags.h in CopyFiles */,
-				277CCA1117B155FA002DF16C /* FLOSVersion.h in CopyFiles */,
-				277CCA1217B155FA002DF16C /* FLSelectorPerforming.h in CopyFiles */,
-				277CCA1317B155FA002DF16C /* FLVersion.h in CopyFiles */,
-				277CCA1417B155FA002DF16C /* NSArray+FLExtras.h in CopyFiles */,
-				277CCA1517B155FA002DF16C /* NSDictionary+FLAdditions.h in CopyFiles */,
-				277CCA1617B155FA002DF16C /* NSObject+Blocks.h in CopyFiles */,
-				277CCA1717B155FA002DF16C /* NSObject+FLPerformSelector.h in CopyFiles */,
+				27C7A6EF17B6BBAB00A83CE2 /* FLBroadcaster.h in Copy Files */,
+				27C7A6F017B6BBAB00A83CE2 /* FLObservable.h in Copy Files */,
+				27C7A6F117B6BBAB00A83CE2 /* FLArrayProxy.h in Copy Files */,
+				27C7A6F217B6BBAB00A83CE2 /* FLMainThreadObject.h in Copy Files */,
+				27C7A6F317B6BBAB00A83CE2 /* FLNonretained.h in Copy Files */,
+				27C7A6F417B6BBAB00A83CE2 /* FLObjectProxy.h in Copy Files */,
+				27C7A6F517B6BBAB00A83CE2 /* FLRetainedObject.h in Copy Files */,
+				27ECBBAC17B15D3B0017F707 /* _FLAtomic.h in Copy Files */,
+				277CC9E617B155FA002DF16C /* FishLampVersion.h in Copy Files */,
+				277CC9E717B155FA002DF16C /* FLAssertionFailedError.h in Copy Files */,
+				277CC9E817B155FA002DF16C /* FLAssertionFailureErrorDomain.h in Copy Files */,
+				277CC9E917B155FA002DF16C /* FLAssertions.h in Copy Files */,
+				277CC9EA17B155FA002DF16C /* FLConfirmations.h in Copy Files */,
+				277CC9EB17B155FA002DF16C /* FLDebug.h in Copy Files */,
+				277CC9EC17B155FA002DF16C /* FLCancelError.h in Copy Files */,
+				277CC9ED17B155FA002DF16C /* FLErrorCodes.h in Copy Files */,
+				277CC9EE17B155FA002DF16C /* FLErrorDomainInfo.h in Copy Files */,
+				277CC9EF17B155FA002DF16C /* FLErrorException.h in Copy Files */,
+				277CC9F017B155FA002DF16C /* FLExceptions.h in Copy Files */,
+				277CC9F117B155FA002DF16C /* FLMutableError.h in Copy Files */,
+				277CC9F217B155FA002DF16C /* FLStackTrace.h in Copy Files */,
+				277CC9F317B155FA002DF16C /* NSError+FLExtras.h in Copy Files */,
+				277CC9F417B155FA002DF16C /* FishLampCore.h in Copy Files */,
+				277CC9F517B155FA002DF16C /* FLAssociatedProperty.h in Copy Files */,
+				277CC9F617B155FA002DF16C /* FLAtomicProperties.h in Copy Files */,
+				277CC9F717B155FA002DF16C /* FLBitFlagsProperty.h in Copy Files */,
+				277CC9F817B155FA002DF16C /* FLDefaultProperty.h in Copy Files */,
+				277CC9F917B155FA002DF16C /* FLProperties.h in Copy Files */,
+				277CC9FA17B155FA002DF16C /* FLSingletonProperty.h in Copy Files */,
+				277CC9FB17B155FA002DF16C /* FLStaticMemberProperty.h in Copy Files */,
+				277CC9FC17B155FA002DF16C /* FLStructFlagsProperty.h in Copy Files */,
+				277CC9FD17B155FA002DF16C /* FLCompilerWarnings.h in Copy Files */,
+				277CC9FE17B155FA002DF16C /* FLCoreFlags.h in Copy Files */,
+				277CC9FF17B155FA002DF16C /* FLMath.h in Copy Files */,
+				277CCA0017B155FA002DF16C /* FLObjc.h in Copy Files */,
+				277CCA0117B155FA002DF16C /* FLObjcARC.h in Copy Files */,
+				277CCA0217B155FA002DF16C /* FLObjcMRC.h in Copy Files */,
+				277CCA0317B155FA002DF16C /* FLCoreRequired.h in Copy Files */,
+				277CCA0417B155FA002DF16C /* FLObjcRuntime.h in Copy Files */,
+				277CCA0517B155FA002DF16C /* FLPropertyAttributes.h in Copy Files */,
+				277CCA0617B155FA002DF16C /* FLRuntimeInfo.h in Copy Files */,
+				277CCA0717B155FA002DF16C /* FLSelector.h in Copy Files */,
+				277CCA0817B155FA002DF16C /* FLCharString.h in Copy Files */,
+				277CCA0917B155FA002DF16C /* FLStringUtils_Inlines.h in Copy Files */,
+				277CCA0A17B155FA002DF16C /* FLPrettyString.h in Copy Files */,
+				277CCA0B17B155FA002DF16C /* FLStringFormatter.h in Copy Files */,
+				277CCA0C17B155FA002DF16C /* FLStringUtils.h in Copy Files */,
+				277CCA0D17B155FA002DF16C /* FLWhitespace.h in Copy Files */,
+				277CCA0F17B155FA002DF16C /* FLAtomic.h in Copy Files */,
+				277CCA1017B155FA002DF16C /* FLBitFlags.h in Copy Files */,
+				277CCA1117B155FA002DF16C /* FLOSVersion.h in Copy Files */,
+				277CCA1217B155FA002DF16C /* FLSelectorPerforming.h in Copy Files */,
+				277CCA1317B155FA002DF16C /* FLVersion.h in Copy Files */,
+				277CCA1417B155FA002DF16C /* NSArray+FLExtras.h in Copy Files */,
+				277CCA1517B155FA002DF16C /* NSDictionary+FLAdditions.h in Copy Files */,
+				277CCA1617B155FA002DF16C /* NSObject+Blocks.h in Copy Files */,
+				277CCA1717B155FA002DF16C /* NSObject+FLPerformSelector.h in Copy Files */,
+			);
+			name = "Copy Files";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27C7A84517B6C23600A83CE2 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = include/FishLampContainers;
+			dstSubfolderSpec = 16;
+			files = (
+				27C7A84617B6C25E00A83CE2 /* FLBatchDictionary.h in CopyFiles */,
+				27C7A84717B6C25E00A83CE2 /* FLCarefulDictionary.h in CopyFiles */,
+				27C7A84817B6C25E00A83CE2 /* FLCollectionIterator.h in CopyFiles */,
+				27C7A84917B6C25E00A83CE2 /* FLInMemoryDataCache.h in CopyFiles */,
+				27C7A84A17B6C25E00A83CE2 /* FLObjectCache.h in CopyFiles */,
+				27C7A84B17B6C25E00A83CE2 /* FLOrderedCollection.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27C7A84C17B6C29000A83CE2 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = include/FishLampLogger;
+			dstSubfolderSpec = 16;
+			files = (
+				27C7A84D17B6C2A800A83CE2 /* FLConsoleLogSink.h in CopyFiles */,
+				27C7A84E17B6C2A800A83CE2 /* FLLog.h in CopyFiles */,
+				27C7A84F17B6C2A800A83CE2 /* FLLogEntry.h in CopyFiles */,
+				27C7A85017B6C2A800A83CE2 /* FLLogger.h in CopyFiles */,
+				27C7A85117B6C2A800A83CE2 /* FLLogSink.h in CopyFiles */,
+				27C7A85217B6C2A800A83CE2 /* FLPrintf.h in CopyFiles */,
+				27C7A85317B6C2A800A83CE2 /* FLTrace.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -955,8 +968,8 @@
 		27C7A7F117B6C12A00A83CE2 /* FLTrace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLTrace.h; sourceTree = "<group>"; };
 		27C7A7F217B6C12A00A83CE2 /* FLTrace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLTrace.m; sourceTree = "<group>"; };
 		27CBC1F416768BA600753D0A /* libFishLampCore-OSX-Universal-MRC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libFishLampCore-OSX-Universal-MRC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		27E957E6170B572F00587A8F /* FishLampProjectSettingsDebug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = FishLampProjectSettingsDebug.xcconfig; sourceTree = "<group>"; };
-		27E957E7170B572F00587A8F /* FishLampProjectSettingsRelease.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = FishLampProjectSettingsRelease.xcconfig; sourceTree = "<group>"; };
+		27E957E6170B572F00587A8F /* FishLampProjectSettingsDebug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = FishLampProjectSettingsDebug.xcconfig; path = "../../../../fishlamp-xcodeconfigs/FishLampProjectSettings/FishLampProjectSettingsDebug.xcconfig"; sourceTree = "<group>"; };
+		27E957E7170B572F00587A8F /* FishLampProjectSettingsRelease.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = FishLampProjectSettingsRelease.xcconfig; path = "../../../../fishlamp-xcodeconfigs/FishLampProjectSettings/FishLampProjectSettingsRelease.xcconfig"; sourceTree = "<group>"; };
 		27F1AF06175FBEEB0086E14A /* FishLampVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FishLampVersion.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 

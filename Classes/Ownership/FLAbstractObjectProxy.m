@@ -1,64 +1,60 @@
 //
-//  FLObjectProxy.m
+//  FLAbstractObjectProxy.m
 //  FishLampCocoa
 //
 //  Created by Mike Fullerton on 6/24/13.
 //  Copyright (c) 2013 Mike Fullerton. All rights reserved.
 //
 
-#import "FLObjectProxy.h"
+#import "FLAbstractObjectProxy.h"
 //#import "FLLog.h"
 //#import "FLTrace.h"
 #import "FLAssertions.h"
 
-@implementation NSObject (FLObjectProxy)
+@implementation NSObject (FLAbstractObjectProxy)
 
-- (id) representedObjectForObjectReference {
-    return self;
+- (id) nextContainedObject {
+    return nil;
 }
 
-- (id) representedObject {
+- (id) containedObject {
     return self;
 }
 
 @end
 
-@implementation FLObjectProxy
+@implementation FLAbstractObjectProxy
 
-- (id) representedObjectForObjectReference {
-    FLAssertNotNil(_unretainedRepresentedObject);
-    id object = [_unretainedRepresentedObject representedObjectForObjectReference];
-    FLAssertNotNil(object);
-    return object;
+- (id) nextContainedObject {
+    return self.containedObject;
+}
+
+- (id) containedObject {
+    return nil;
 }
 
 - (id) representedObject {
-
-// NOTE: for some reason this returns nil if we call NSObject's version of representedObject
-// some quirk in the objc runtime??
-
-    FLAssertNotNil(_unretainedRepresentedObject);
-    id object = [_unretainedRepresentedObject representedObjectForObjectReference];
-    FLAssertNotNil(object);
-    return object;
-}
-
-- (id) init {	
-	return [self initWithRepresentedObject:nil];
-}
-
-- (id) initWithRepresentedObject:(id) representedObject {
-    FLAssertNotNil(representedObject);
-
-    _unretainedRepresentedObject = representedObject;
-	return self;
+    id walker = [self nextContainedObject];
+    while(walker) {
+        id next = [walker nextContainedObject];
+        if(next) {
+            walker = next;
+        }
+        else {
+            break;
+        }
+    }
+    return walker;
 }
 
 - (NSString*) description {
+
+    id object = [self representedObject];
+
 	return [NSString stringWithFormat:@"%@ holding a %@:\n%@",
         NSStringFromClass([self class]),
-        NSStringFromClass([_unretainedRepresentedObject class]),
-        [_unretainedRepresentedObject description]];
+        NSStringFromClass([object class]),
+        [object description]];
 }
 
 - (BOOL)isEqual:(id)representedObject {

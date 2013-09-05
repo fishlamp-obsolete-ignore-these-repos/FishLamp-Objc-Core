@@ -1,22 +1,23 @@
 //
 //  FLObjectProxy.h
-//  FishLampCocoa
+//  FishLampCore
 //
-//  Created by Mike Fullerton on 6/24/13.
+//  Created by Mike Fullerton on 9/3/13.
 //  Copyright (c) 2013 Mike Fullerton. All rights reserved.
 //
 
-#import "FLCoreRequired.h"
+#import <Foundation/Foundation.h>
 
+/**
+ *  A object proxy the protocol for defining objects that represents represents another object.
+ */
 @protocol FLObjectProxy <NSObject>
-- (id) representedObject;
-@end
 
-@interface FLObjectProxy : NSProxy<FLObjectProxy> {
-@private
-    __unsafe_unretained id _unretainedRepresentedObject;
-}
+/**
+ *  Returns the represented object (a real object) or another object proxy.
+ *  
+ *  @return represented object or another proxy
+ */
 - (id) representedObject;
-- (id) initWithRepresentedObject:(id) object;
 
 @end

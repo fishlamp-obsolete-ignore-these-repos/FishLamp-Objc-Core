@@ -11,6 +11,10 @@
 
 @implementation FLAbstractArrayProxy
 
+- (id) init {
+    return self;
+}
+
 - (NSArray*) array {
     return nil;
 }
@@ -37,10 +41,6 @@
 }
 
 - (NSMethodSignature*)methodSignatureForSelector:(SEL)selector {
-//    NSMethodSignature* signature = [super methodSignatureForSelector:selector];
-//    if(signature) {
-//        return signature;
-//    }
 
     NSMethodSignature* signature = nil;
     for(id obj in [self array]) {
@@ -50,7 +50,11 @@
         }
     }
 
-    return [super methodSignatureForSelector:selector];
+    if(!signature) {
+        signature = [NSMethodSignature signatureWithObjCTypes:"@^v^c"];
+    }
+
+    return signature;
 }
 
 @end
